@@ -10,19 +10,23 @@
 
 Black holes are astrophysical objects with gravitational fields so extreme that they bend even the trajectories of light. In the geometrical optics limit, light paths follow null geodesics in curved spacetime. This paclet provides analytical solutions for these geodesics and builds on them to generate realistic visualizations of black hole environments.
 
-The paclet can be used for:
+Out of the box, the paclet can:
+
+- :dizzy: Compute photon orbits (null geodesics) in the gravitational fields of black holes
+- :crystal_ball: Generate images of stellar backgrounds distorted by black hole gravity
+- :dvd: Visualize accretion disks near black holes using the standard α-disk model
+
+This can be used for the following:
 
 - :telescope: **Scientific research** on accretion disk properties and dynamics
 - :book: **Educational use** for teaching relativity and black hole physics
 - :sparkles:  **Visualization** of relativistic effects for presentations and outreach
 - :bar_chart: **Reference implementation** for validating numerical simulations
-- :dizzy: Computing photon orbits (null geodesics) in the gravitational fields of black holes
-- :crystal_ball: Generating images of stellar backgrounds distorted by black hole gravity
-- :dvd: Visualizing accretion disks near black holes using the standard α-disk model
+
 
 ## Package Structure
 
-The paclet contains three main packages:
+The paclet contains three main packages that implement the functions listed below:
 
 1. **`KerrNullGeodesics`** - Implements analytical solutions for null geodesics in Kerr space-time based on Gralla & Lupsasca (2020)
    - `KerrNullGeo` - Computes null geodesics from specified initial conditions
