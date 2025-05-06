@@ -21,10 +21,10 @@
 
 BeginPackage["BlackHoleImages`KerrNullGeodesics`"]
 
-KerrNullGeo::usage = "KerrNullGeo[a,xs,ps] returns a KerrNullGeoFunction which stores information about the trajectory of a light-ray starting from specified initial conditions. The black hole spin a, position xs, and wavevector ps  are assumed to be given in units of the BH mass, unless mass M is specified (optional argument).";
-KerrNullGeoFunction::usage = "KerrNullGeoFunction[a,xs,ps,M,assoc] is an object for storing the trajectory and its parameters in the assoc Association.";
-KerrNullGeoDistant::usage = "KerrNullGeoDistant[a,\[Theta]o,\[Alpha],\[Beta]] returns a KerrNullGeoDistantFunction which stores information about the trajectory of a light-ray scattering off the black hole from infinity. The spin a, and Bardeen's impact parameters \[Alpha], \[Beta] are assumed to be given in units of the BH mass";
-KerrNullGeoDistantFunction::usage = "KerrNullGeoDistantFunction[a,\[Theta]o,\[Alpha],\[Beta],assoc] is an object for storing the trajectory and its parameters in the assoc Association.";
+KerrNullGeo::usage = "KerrNullGeo[a, xs, ps, M_:1, Options] returns a KerrNullGeoFunction which stores information about the trajectory of a light-ray starting from specified initial conditions. The black hole spin a, position xs, and wavevector ps  are assumed to be given in units of the BH mass, unless mass M is specified (optional argument).";
+KerrNullGeoFunction::usage = "KerrNullGeoFunction[a, xs, ps, M, assoc] is an object for storing the trajectory and its parameters in the assoc Association.";
+KerrNullGeoDistant::usage = "KerrNullGeoDistant[a, \[Theta]o, \[Alpha], \[Beta], shellRadius_:50, radiusLimit_:0, Options] returns a KerrNullGeoDistantFunction which stores information about the trajectory of a light-ray scattering off the black hole from infinity. The spin a, and Bardeen's impact parameters \[Alpha], \[Beta] are assumed to be given in units of the BH mass";
+KerrNullGeoDistantFunction::usage = "KerrNullGeoDistantFunction[a, \[Theta]o, \[Alpha], \[Beta], assoc] is an object for storing the trajectory and its parameters in the assoc Association.";
 
 Begin["`Private`"];
 
