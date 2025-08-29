@@ -11,7 +11,7 @@ authors:
     orcid: 0009-0000-7558-2509
     affiliation: 1
   - name: Vojtěch Witzany
-    orcid: https://orcid.org/0000-0002-9209-5355
+    orcid: 0000-0002-9209-5355
     affiliation: 1
 affiliations:
   - name: Institute of Theoretical Physics, Faculty of Mathematics and Physics, Charles University, V Holešovičkách 2, 180 00 Praha 8, Czech Republic 
