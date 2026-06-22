@@ -647,6 +647,15 @@ If[OptionValue["PhiRange"][[2]]===\[Infinity],
   \[Phi]=Function[{Global`\[Lambda]}, Evaluate[Mod[I\[Phi][Global`\[Lambda]]+ G\[Phi][Global`\[Lambda]] + \[Phi]s, OptionValue["PhiRange"][[2]]-OptionValue["PhiRange"][[1]], OptionValue["PhiRange"][[1]]]], Listable]
 ];
 
+If[\[Eta]>0 && (Quiet[\[Phi][\[Lambda]x]===ComplexInfinity] || \[ScriptL]==0),
+	G\[Phi] = OrdinaryPolarMotionLimit[a, \[Eta], \[ScriptL], \[Theta]o, -\[Nu]\[Theta], \[Lambda]x];
+	If[OptionValue["PhiRange"][[2]]===\[Infinity], 
+        \[Phi]=Function[{Global`\[Lambda]}, Evaluate[I\[Phi][Global`\[Lambda]]+G\[Phi][Global`\[Lambda]]] + \[Phi]s, Listable],
+       (*else*)
+        \[Phi]=Function[{Global`\[Lambda]}, Evaluate[Mod[I\[Phi][Global`\[Lambda]]+G\[Phi][Global`\[Lambda]] + \[Phi]s, OptionValue["PhiRange"][[2]]-OptionValue["PhiRange"][[1]], OptionValue["PhiRange"][[1]]]], Listable]
+    ];
+];
+
 t = Function[{Global`\[Lambda]}, Evaluate[It[Global`\[Lambda]] + a^2 Gt[Global`\[Lambda]] + ts], Listable];
 If[type == "PhotonEscape", \[Theta]x=\[Theta][\[Lambda]x]; \[Phi]x=\[Phi][\[Lambda]x], \[Theta]x=-1; \[Phi]x=-1];
 
